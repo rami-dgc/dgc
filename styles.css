@@ -1,0 +1,582 @@
+/* Importing Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* Global Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* Default text color to white */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Base font size */
+  text-align: center;
+}
+
+/* Wrapper to handle margins */
+.wrapper {
+  /* Removed max-width to allow percentage-based padding */
+  margin: 0 auto;
+  padding: 0 17.5%; /* 17.5% padding on left and right */
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #000; /* Black */
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.sign-in-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.sign-in {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.sign-in:hover {
+  text-decoration: underline;
+}
+
+.sign-in-container:hover {
+  background-color: #262626;
+}
+
+.sign-in-container:hover .sign-in {
+  color: #ffffff;
+}
+
+/* Header Container */
+.header-container {
+  margin-top: 40px;
+}
+
+.header-container h1 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.header-container p {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+}
+
+.highlight {
+  background-color: #ff5c82;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  max-width: 100%; /* Adjusted to fit within wrapper padding */
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 450px;
+  background-color: #333; /* Darker background for video placeholder */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.play-button {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.play-button:hover {
+  color: #ff5c82; /* Highlight on hover */
+}
+
+.progress-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.progress {
+  width: 80%;
+  height: 5px;
+  background-color: #444;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-filled {
+  width: 25%;
+  height: 100%;
+  background-color: #ff5c82;
+  transition: width 0.3s ease;
+}
+
+/* Ways Container */
+.ways-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Changed from flex-start to stretch */
+  margin-top: 50px;
+  gap: 40px;
+  width: 100%; /* Fits within wrapper margins */
+}
+
+.old-way-container,
+.new-way-container {
+  flex: 1 1 0; /* Ensure both containers take equal space */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red */
+}
+
+.new-way-container {
+  background-color: rgba(56, 240, 35, 0.7); /* Semi-transparent green */
+}
+
+/* Ensure both containers have the same height */
+.ways-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Uniform Title Sizes */
+h1, h2, .title {
+  font-size: 2rem; /* 32px */
+  font-weight: 700; /* Ensuring boldness consistency */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features-section {
+  /* Original styles */
+}
+
+.features-section .title {
+  /* Original styles */
+}
+
+.features-section .subtitle {
+  /* Original styles */
+}
+
+.features {
+  /* Original styles */
+}
+
+.feature {
+  /* Original styles */
+}
+
+.emoji {
+  /* Original styles */
+}
+
+.feature p {
+  /* Original styles */
+}
+
+/* All Features Section - Integrated Styles */
+.all-features-container {
+  background-color: #000; /* Ensuring the background is black */
+  padding: 20px 0; /* Added top and bottom padding */
+  margin-top: 50px;
+}
+
+.all-features-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-features-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.all-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px; /* Increased gap for better spacing */
+  text-align: left;
+}
+
+.all-feature {
+  display: flex;
+  align-items: flex-start;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.all-emoji {
+  font-size: 26px;
+  margin-right: 15px;
+}
+
+.all-feature p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ways-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .old-way-container,
+  .new-way-container {
+      flex: none; /* Remove flex-grow and flex-shrink */
+      width: 100%;
+      max-width: 500px;
+  }
+
+  .arrow-container {
+      width: 80%;
+  }
+
+  .arrow {
+      width: 100%;
+  }
+
+  .all-features {
+      grid-template-columns: 1fr; /* Stack features vertically on small screens */
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .wrapper {
+      padding: 0 10%; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Counter Container */
+.counter-container {
+  background-color: #1F1F1F;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  margin: 40px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.star-icon {
+  font-size: 4.7rem; /* 75px */
+  margin-bottom: 10px;
+}
+
+.counter-value {
+  font-size: 4.25rem; /* 68px */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.counter-text {
+  font-size: 1rem; /* 16px */
+  font-weight: 300;
+}
+
+/* Header Text */
+.header-text {
+  text-align: center;
+  color: #fff;
+  margin: 30px 0;
+}
+
+.header-text h1 {
+  font-size: 2rem; /* 32px */
+  font-weight: 700; /* Ensuring consistency */
+  margin: 0 0 10px 0;
+}
+
+.header-text h2 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.header-text p {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+}
+
+.header-text strong {
+  font-weight: 600;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #f7f5f2;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 50px auto; /* Added bottom margin */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 1rem; /* 16px */
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem; /* 12px */
+  margin-bottom: 0.938rem; /* 15px */
+  border-radius: 0.3125rem; /* 5px */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem; /* 16px */
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem; /* 12px */
+  margin-bottom: 0.938rem; /* 15px */
+  border-radius: 0.3125rem; /* 5px */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem; /* 16px */
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #D51F2C;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.agreement {
+  margin-bottom: 1.25rem; /* 20px */
+  color: #666;
+  font-size: 0.875rem; /* 14px */
+}
+
+.agreement a {
+  color: #D51F2C;
+  text-decoration: none;
+}
+
+.agreement a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  margin-top: 0;
+  margin-bottom: 1.25rem; /* 20px */
+  color: #666;
+  font-size: 0.875rem; /* 14px */
+}
+
+.submit-btn1 {
+  width: 100%;
+  padding: 1.6875rem; /* 27px */
+  background-color: #D51F2C;
+  color: #fff;
+  font-size: 1.5rem; /* 24px */
+  border: none;
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn1:hover {
+  background-color: #CB1D29;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    max-width: 100px; /* Adjust as needed */
+}
+.ways-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Changed from flex-start to stretch */
+    margin-top: 50px;
+    gap: 40px;
+    width: 100%; /* Fits within wrapper margins */
+}
+
+.old-way-container,
+.new-way-container {
+    flex: 1; /* Ensure both containers take equal space */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.7); /* Semi-transparent red */
+}
+
+.new-way-container {
+    background-color: rgba(56, 240, 35, 0.7); /* Semi-transparent green */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between content rows */
+}
+
+.left-text,
+.right-text {
+    text-align: center;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Space between text and arrow */
+}
+
+.bold {
+    font-weight: bold;
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Space between text and arrow */
+    width: 80px; /* Adjust this value to make the arrow 8 times longer */
+}
+
+.arrow {
+    display: inline-block;
+    width: 100%; /* Ensure the arrow takes full width of the container */
+    text-align: center; /* Center the arrow text */
+    font-size: 8rem; /* Adjust font size as needed */
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; /* Increase space between text and arrow */
+    width: 200px; /* Adjust this value to make the arrow much longer */
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 2rem; /* Adjust font size as needed */
+    transform: translateX(-50%); /* Center the arrow text */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center all content */
+    margin-bottom: 15px; /* Space between content rows */
+}
+
+.left-text,
+.right-text {
+    text-align: center;
+    flex: 1; /* Allow both text sections to take equal space */
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the arrow */
+    margin: 0 20px; /* Space between text and arrow */
+}
+
+.arrow {
+    display: inline-block;
+    width: 20px; /* Set the arrow length to 20px */
+    text-align: center; /* Center the arrow text */
+    font-size: 2rem; /* Adjust font size as needed */
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center all content */
+    margin-bottom: 15px; /* Space between content rows */
+}
+
+.left-text,
+.right-text {
+    text-align: center;
+    flex: 1; /* Allow both text sections to take equal space */
+}
