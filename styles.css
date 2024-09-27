@@ -586,8 +586,9 @@ input[type="checkbox"] {
 /* Client Testimonials Section */
 .testimonial-container {
     display: flex;
+flex-direction: row;
     justify-content: space-between; /* Space between cards */
-    gap: 20px; /* Space between cards */
+    gap: 10px; /* Space between cards */
     padding: 40px 0; /* Padding above and below */
     margin: 0 auto; /* Center the entire section */
     max-width: 1200px; /* Limit the total width of the container */
