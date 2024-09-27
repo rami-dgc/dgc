@@ -580,3 +580,107 @@ input[type="checkbox"] {
     text-align: center;
     flex: 1; /* Allow both text sections to take equal space */
 }
+/* Client Testimonials Section */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    padding: 40px 0; /* Padding to create space above and below */
+    flex-wrap: wrap; /* Wrap the items if there is not enough space */
+}
+
+.testimonial-card {
+    background-color: #1F1F1F; /* Dark gray background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align text */
+}
+
+.testimonial-image {
+    width: 100%; /* Make image responsive */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 2rem;
+
+
+    /* Client Testimonials Section */
+.testimonial-title {
+    font-size: 2rem; /* Adjusted font size for the h2 caption */
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    padding: 40px 0; /* Padding to create space above and below */
+    flex-wrap: wrap; /* Wrap the items if there is not enough space */
+}
+
+.testimonial-card {
+    background-color: #1F1F1F; /* Dark gray background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align
+
+    /* Client Testimonials Section */
+.testimonial-title {
+    font-size: 2rem; /* Adjusted font size for the h2 caption */
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-subheading {
+    font-size: 1.25rem; /* Adjusted font size for the subheadings */
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-container
+
+/* Subheading under 'Take Your Business to the Next Level' */
+.subheading {
+    font-size: 1.25rem; /* Adjusted font size for the subheading */
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Align form with site’s color scheme */
+.form-container {
+    background-color: #f7f5f2;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto; /* Add space above and below */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 27px;
+    background-color: #D51F2C; /* Matches the rest of your site */
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.submit-btn:hover {
+    background-color: #CB1D29;
+}
