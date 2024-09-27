@@ -580,13 +580,18 @@ input[type="checkbox"] {
     text-align: center;
     flex: 1; /* Allow both text sections to take equal space */
 }
-/* Client Testimonials Section */
+
+
+
+ /* Client Testimonials Section */
 .testimonial-container {
     display: flex;
     justify-content: center;
     gap: 20px; /* Space between cards */
-    padding: 40px 0; /* Padding to create space above and below */
-    flex-wrap: wrap; /* Wrap the items if there is not enough space */
+    padding: 40px 0; /* Padding above and below */
+    flex-wrap: wrap; /* Wrap the items on smaller screens */
+    margin: 0 auto; /* Ensure it's centered */
+    max-width: 1200px; /* Limit the width to avoid spreading out too much */
 }
 
 .testimonial-card {
@@ -594,62 +599,31 @@ input[type="checkbox"] {
     border-radius: 10px;
     padding: 20px;
     width: 300px; /* Fixed width for cards */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Prevent cards from becoming larger than the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
     text-align: center; /* Center align text */
+    margin: 10px; /* Add spacing around the cards */
 }
 
 .testimonial-image {
-    width: 100%; /* Make image responsive */
-    border-radius: 10px;
+    width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 280px; /* Set a maximum width */
+    border-radius: 10px; /* Rounded corners */
     margin-bottom: 15px;
 }
 
 .quote {
-    font-size: 2rem;
-
-
-    /* Client Testimonials Section */
-.testimonial-title {
-    font-size: 2rem; /* Adjusted font size for the h2 caption */
-    font-weight: bold;
+    font-size: 1.2rem; /* Smaller font size for the quote */
+    font-weight: 600;
     color: #fff;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between cards */
-    padding: 40px 0; /* Padding to create space above and below */
-    flex-wrap: wrap; /* Wrap the items if there is not enough space */
+.description {
+    font-size: 0.9rem; /* Smaller font size for the description */
+    color: #ccc; /* Lighter color for the description */
 }
-
-.testimonial-card {
-    background-color: #1F1F1F; /* Dark gray background for cards */
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px; /* Fixed width for cards */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Center align
-
-    /* Client Testimonials Section */
-.testimonial-title {
-    font-size: 2rem; /* Adjusted font size for the h2 caption */
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.testimonial-subheading {
-    font-size: 1.25rem; /* Adjusted font size for the subheadings */
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.testimonial-container
 
 /* Subheading under 'Take Your Business to the Next Level' */
 .subheading {
@@ -684,4 +658,3 @@ input[type="checkbox"] {
 .submit-btn:hover {
     background-color: #CB1D29;
 }
-  
