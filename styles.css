@@ -111,7 +111,7 @@ body {
   position: relative;
   max-width: 100%; /* Adjusted to fit within wrapper padding */
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
 }
 
 .video-placeholder {
@@ -168,7 +168,7 @@ body {
   margin-top: 50px;
   gap: 40px;
   width: 100%; /* Fits within wrapper margins */
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 
 .old-way-container,
@@ -241,7 +241,7 @@ h1, h2, .title {
   max-width: 450px;
   margin: 40px auto;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 
 .counter-subheading {
@@ -527,7 +527,7 @@ flex-direction: row;
     margin: 0 auto; /* Center the entire section */
     max-width: 1500px; /* Limit the total width of the container */
     flex-wrap: nowrap; /* Prevent wrapping, force all cards to stay in one row */
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 .testimonial-card {
